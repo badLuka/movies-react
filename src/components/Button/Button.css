@@ -6,7 +6,6 @@ button {
 	font-weight: 400;
 	font-family: inherit;
 	background: #7B6EF6;
-
 	cursor: pointer;
-	transition: border-color 0.25s;
+	color: #fff;
 }

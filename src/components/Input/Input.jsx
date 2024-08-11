@@ -1,11 +1,16 @@
 import Button from '../Button/Button'
 import './Input.css'
 
-function Input({ name, placeholder }) {
+function Input({ name, placeholder, InputSearch }) {
+
+	const inputChange = (event) => {
+		console.log(event.target.value)
+	}
 
 	return (
 		<form action="">
-			<input htype="text" name={name} placeholder={placeholder} />
+			<img className="search-icon" src={InputSearch} alt="Иконка поиска" />
+			<input type="text" name={name} placeholder={placeholder} onChange={inputChange} />
 			<Button text={'Искать'} />
 		</form>
 	)
